@@ -8,4 +8,5 @@ for i in os.listdir('images/'):
     result = model(img)
     r = json.loads(result[0].tojson())
     name = r[0]['name']
+    print(name) #print the result -> name of detected object
     
